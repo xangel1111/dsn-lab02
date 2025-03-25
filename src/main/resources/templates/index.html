@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <h1>Cats</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <td>Name </td>
+        <td>Age </td>
+        <td>Color </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr th:each="cat : ${cats}">
+        <td th:text="${cat.name}"></td>
+        <td th:text="${cat.age} "></td>
+        <td th:text="${cat.color}"></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
